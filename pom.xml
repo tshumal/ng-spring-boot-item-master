@@ -24,6 +24,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<id>in-project</id>
+			<name>In Project Repo</name>
+			<url>file://${project.basedir}/libs</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -37,6 +44,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>io.linx.prometheus</groupId>
+			<artifactId>spring-boot-prometheus-exporter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hsqldb</groupId>
