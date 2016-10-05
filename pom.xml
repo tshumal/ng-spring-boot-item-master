@@ -14,6 +14,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+        <spring.cloud.version>1.1.0.RELEASE</spring.cloud.version>
 	</properties>
 
 	<build>
@@ -45,6 +46,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>			
 		</dependency>
+        <dependency>
+            <groupId>io.pivotal.spring.cloud</groupId>
+            <artifactId>spring-cloud-services-starter-config-client</artifactId>
+            <version>${spring.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.pivotal.spring.cloud</groupId>
+            <artifactId>spring-cloud-services-starter-service-registry</artifactId>
+            <version>${spring.cloud.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>io.linx.prometheus</groupId>
 			<artifactId>spring-boot-prometheus-exporter</artifactId>
